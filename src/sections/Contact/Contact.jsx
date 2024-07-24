@@ -18,7 +18,7 @@ function Contact() {
       message.style.color = "red";
     } else {
       setSent(true);
-      axios.post("http://localhost:3000/contact", data).then((response) => {
+      axios.post("https://portofolio-backend-omega.vercel.app/contact", data).then((response) => {
         const message = document.getElementById("response");
         message.innerText = response
           ? "Email sent successfully"
